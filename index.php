@@ -26,22 +26,22 @@
         return $this->name;
     }
     
-    function get_releaseYear(){
+    function getReleaseYear(){
         return $this->releaseYear;
     }
     
-    function get_director(){
+    function getDirector(){
         return $this->director;
     }
     
-    function get_genre(){
+    function getGenre(){
         return $this->genre;
     }
 }
 
-$movieOne = new Movie("interstellar", "2018", "Nolan", "Sci-fi");
-
-var_dump($movieOne);
+$movieOne = new Movie("interstellar", 2018, "Nolan", "Sci-fi");
+$movieTwo = new Movie("Dune", 2021, "villenueve", "sci-fi");
+var_dump($movieOne, $movieTwo);
 
 ?>
 
