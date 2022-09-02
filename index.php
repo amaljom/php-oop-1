@@ -11,19 +11,19 @@
 <?php 
  class Movie{
 
-    public $name;
-    public $releaseYear;
-    public $director;
-    public $genre;
+    private $name;
+    private $releaseYear;
+    private $director;
+    private $genre;
 
-    function __constructor($name, $releaseYear, $director, $genre){
+    function __construct($name, $releaseYear, $director, $genre){
         $this->name = $name;
         $this->releaseYear = $releaseYear;
         $this->director = $director;
         $this->genre = $genre;
     }
-    function get_name(){
-        return $this-> name;
+    function getName(){
+        return $this->name;
     }
     
     function get_releaseYear(){
@@ -40,6 +40,7 @@
 }
 
 $movieOne = new Movie("interstellar", "2018", "Nolan", "Sci-fi");
+
 var_dump($movieOne);
 
 ?>
